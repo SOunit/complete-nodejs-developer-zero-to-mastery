@@ -12,5 +12,10 @@ module.exports = {
       const products = await Promise.resolve(productsModel.getAllProducts());
       return products;
     },
+
+    productsByPrice: (_, args) => {
+      const { min, max } = args;
+      return productsModel.getProductsByPrice(min, max);
+    },
   },
 };
