@@ -29,9 +29,21 @@ function getProductById(id) {
 }
 
 function addNewProduct(id, description, price) {
-  const newProduct = { id, description, price, review: [] };
+  const newProduct = { id, description, price, reviews: [] };
   products.push(newProduct);
   return newProduct;
+}
+
+function addNewProductReview(id, rating, comment) {
+  const newReview = { rating, comment };
+  console.log(newReview);
+  const productIndex = products.findIndex((product) => product.id === id);
+
+  if (productIndex > 0) {
+    products[productIndex].reviews.push(newReview);
+    console.log(products[productIndex]);
+    return products[productIndex];
+  }
 }
 
 module.exports = {
@@ -39,4 +51,5 @@ module.exports = {
   getProductsByPrice,
   getProductById,
   addNewProduct,
+  addNewProductReview,
 };
