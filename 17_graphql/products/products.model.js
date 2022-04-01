@@ -35,14 +35,11 @@ function addNewProduct(id, description, price) {
 }
 
 function addNewProductReview(id, rating, comment) {
-  const newReview = { rating, comment };
-  console.log(newReview);
   const productIndex = products.findIndex((product) => product.id === id);
-
-  if (productIndex > 0) {
+  if (productIndex >= 0) {
+    const newReview = { rating, comment };
     products[productIndex].reviews.push(newReview);
-    console.log(products[productIndex]);
-    return products[productIndex];
+    return newReview;
   }
 }
 
