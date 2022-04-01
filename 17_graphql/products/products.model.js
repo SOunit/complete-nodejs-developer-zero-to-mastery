@@ -19,13 +19,15 @@ function getProductsByPrice(min, max) {
   const filteredProducts = products.filter(
     (product) => min < product.price && product.price < max
   );
-
-  console.log("filteredProducts", filteredProducts);
-
   return filteredProducts;
+}
+
+function getProductById(id) {
+  return products.find((product) => product.id === id);
 }
 
 module.exports = {
   getAllProducts,
   getProductsByPrice,
+  getProductById,
 };
