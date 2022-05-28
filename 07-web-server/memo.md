@@ -74,3 +74,8 @@ access-control-allow-origin: *
 ```
 access-control-allow-origin: https://www.google.com
 ```
+
+# handling request is complex without framework...
+
+- let's use express!
+- node is good at handling stream
