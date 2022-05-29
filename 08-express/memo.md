@@ -62,3 +62,14 @@
 - CDN services
   - Akamai
   - Amazon Cloudfront
+
+# separation of concern
+
+## Before
+
+- server render frontend page
+
+## After
+
+- backend server serve data
+- frontend render client page
