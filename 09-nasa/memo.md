@@ -26,3 +26,8 @@
   - add header option to response from server
     - Access-Control-Allow-Origin: https://www.google.com
     - Access-Control-Allow-Origin: \*
+
+# model
+
+- can be used multiple places
+- router / controller is 1 to 1 relationship
