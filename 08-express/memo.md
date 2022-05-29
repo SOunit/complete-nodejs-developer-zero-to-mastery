@@ -21,3 +21,16 @@
   - react
   - SSR / server side rendering
   - typescript
+
+# postman
+
+- API client
+- automated testing / CI
+- design / mock
+- documentations
+- monitors
+- workspaces
+
+# insomnia
+
+- postman like tool
