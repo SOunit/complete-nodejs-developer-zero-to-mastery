@@ -31,3 +31,8 @@
 
 - can be used multiple places
 - router / controller is 1 to 1 relationship
+
+# log middleware
+
+- morgan
+- log to new files in hrs / day
