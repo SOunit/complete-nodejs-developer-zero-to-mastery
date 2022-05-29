@@ -34,3 +34,23 @@
 # insomnia
 
 - postman like tool
+
+# RESTful APIs
+
+- app following REST pattern
+
+- REpresentational
+- State
+- Transfer
+
+## RestFul API points
+
+- using existing standards
+  - HTTP
+  - JSON
+  - URL
+- endpoints are collections of data
+- use GET, POST, PUT and DELETE
+- Client and Server
+- stateless and cache-able
+  - cache is available if server is stateless
