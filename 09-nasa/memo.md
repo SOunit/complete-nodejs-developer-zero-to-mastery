@@ -17,6 +17,12 @@
   - host page: localhost:3000
   - request1: localhost:3000 : ok
   - request2: localhost:5000 : ng : different origin
+  - origin
+    - protocol
+    - host
+    - port
 
 - fix
-  - add cors header to response from server
+  - add header option to response from server
+    - Access-Control-Allow-Origin: https://www.google.com
+    - Access-Control-Allow-Origin: \*
