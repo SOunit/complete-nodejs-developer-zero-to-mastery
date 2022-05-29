@@ -54,3 +54,11 @@
 - Client and Server
 - stateless and cache-able
   - cache is available if server is stateless
+
+# Content Delivery Service for static page
+
+- node is not special good at serving static pages
+- node is good at non-blocking async I/O RESTful API endpoint
+- CDN services
+  - Akamai
+  - Amazon Cloudfront
